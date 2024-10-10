@@ -74,18 +74,20 @@ const VirtualItemCard = ({ item }: Props) => {
         </CardContent>
       </CardActionArea>
       <CardActions sx={{ marginTop: "auto" }}>
-        <Button
-          size="medium"
-          color="primary"
-          variant="contained"
-          onClick={handleClick}
-        >
-          {loading ? (
-            <CircularProgress size={25} color="inherit" />
-          ) : (
-            `${item.price.amount} ${item.price.currency}`
-          )}
-        </Button>
+        {!!item.price && (
+          <Button
+            size="medium"
+            color="primary"
+            variant="contained"
+            onClick={handleClick}
+          >
+            {loading ? (
+              <CircularProgress size={25} color="inherit" />
+            ) : (
+              `${item.price?.amount} ${item.price?.currency}`
+            )}
+          </Button>
+        )}
       </CardActions>
     </Card>
   );

@@ -9,9 +9,9 @@ const Root = () => {
   return (
     <AuthContextProvider>
       <OrderInfoContextProvider>
-        <Box sx={{ bgcolor: "#cfe8fc", height: "100vh" }}>
+        <Box sx={{ bgcolor: "#cfe8fc", minHeight: "100vh" }}>
           <ButtonAppBar />
-          <Container maxWidth="lg" sx={{ paddingTop: "30px" }}>
+          <Container maxWidth="lg" sx={{ padding: "30px" }}>
             <Outlet />
           </Container>
         </Box>
