@@ -12,7 +12,7 @@
   "dependencies": {
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
-    "@mui/icons-material": "^6.1.1",
+    "@mui/icons-material": "^6.4.12",
     "@mui/material": "^6.1.1",
     "@xsolla/login-sdk": "^0.93.0",
     "centrifuge": "^5.2.2",
